@@ -1,0 +1,4 @@
+# dsh-alexlib - AlexLib book library tools for DeepSeek Harness.
+- insert:
+    - id: dsh-alexlib
+      name: '@snow-the/dsh-alexlib'

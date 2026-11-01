@@ -1,0 +1,48 @@
+{
+  "name": "@snow-the/dsh-alexlib",
+  "version": "0.1.0",
+  "description": "AlexLib book library tools for DeepSeek Harness: CJK-bigram FTS5 search over the OCR corpus, content-first, no runtime dependencies.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "alexlib",
+    "library",
+    "fts5",
+    "cjk"
+  ],
+  "files": [
+    "index.js",
+    "t2s.json",
+    "cordis.patch.yml",
+    "package.json",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": [
+        "0.2.1-rc.5"
+      ],
+      "verifiedAgainst": "0.2.1-rc.5"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build-index": "node index.js --build"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.1-rc.5"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  }
+}
