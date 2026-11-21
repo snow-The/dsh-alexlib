@@ -19,6 +19,7 @@
   ],
   "files": [
     "index.js",
+    "worker",
     "t2s.json",
     "cordis.patch.yml",
     "package.json",
