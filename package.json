@@ -1,6 +1,10 @@
 {
   "name": "@snow-the/dsh-alexlib",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snow-The/dsh-alexlib.git"
+  },
   "description": "AlexLib book library tools for DeepSeek Harness: CJK-bigram FTS5 search over the OCR corpus, content-first, no runtime dependencies.",
   "type": "module",
   "main": "./index.js",
